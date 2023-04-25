@@ -12,7 +12,7 @@
 			"dest": "/"
 		},
 		{
-			"source": "/api/(.*)",
+			"src": "/api/(.*)",
 			"headers": [
 				{
 					"key": "Access-Control-Allow-Credentials",
