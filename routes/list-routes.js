@@ -6,11 +6,11 @@ const router = express.Router()
 
 
 
-router.get('api/lists', getLists)
-router.get('api/lists/:id', getList)
-router.delete('api/lists/:id', deleteList)
-router.post('api/lists', postList)
-router.patch('api/lists/:id', updateList)
+router.get('/lists', getLists)
+router.get('/lists/:id', getList)
+router.delete('/lists/:id', deleteList)
+router.post('/lists', postList)
+router.patch('/lists/:id', updateList)
 
 
 module.exports = router
