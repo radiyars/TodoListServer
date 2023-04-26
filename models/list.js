@@ -7,19 +7,17 @@ const listSchema = new Schema({
 		type: String,
 		required: true,
 	},
-	colorId: {
-		type: Number,
-		required: true,
-	},
-	smth1: [String],
-	smth2: {
-		hours: Number,
-		minutes: Number,
-	},
-	smth3: [{
+	colorId: Number,
+	color: {
+		id: String,
+		colorId: Number,
+		hex: String,
 		name: String,
+	},
+	tasks: [{
 		text: String,
-	}],
+		completed: Boolean
+	}]
 })
 
 const List = mongoose.model('List', listSchema)
