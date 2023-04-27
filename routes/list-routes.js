@@ -5,7 +5,6 @@ const { getLists, getList, deleteList, postList, updateList } = require('../cont
 const router = express.Router()
 
 
-
 router.get('/api/lists', getLists)
 router.get('/api/lists/:id', getList)
 router.delete('/api/lists/:id', deleteList)
