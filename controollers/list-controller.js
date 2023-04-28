@@ -7,7 +7,7 @@ const handleError = (res, error) => {
 const getLists = (req, res) => {
 	List
 		.find()
-		.sort({ name: 1 })
+		// .sort({ name: 1 })
 		.then((lists) => {
 			res
 				.status(200)
